@@ -21,16 +21,18 @@
     <link href="css/sb-admin-2.min.css" rel="stylesheet">
     <link href="css/nice-forms.css" rel="stylesheet">
     <style>
-        .form-container{
-            margin-right: 800px;
-
+        .benefits{
+            margin-left: 50px;
+    
         }
+        /* .table{
+           
+            padding-right: 30px;
+        } */
 
-        .forms-container{
-            margin-left: 600px;
-            margin-right:170px;
-            margin-top: -672px;
-
+        .form-container{
+            margin: 1.5rem !important;
+            padding: 30px 30px 30px 30px;
         }
     </style>
 
@@ -282,8 +284,7 @@
                                 </h6>
                                 <a class="dropdown-item d-flex align-items-center" href="#">
                                     <div class="dropdown-list-image mr-3">
-                                        <img class="rounded-circle" src="img/undraw_profile_1.svg"
-                                            alt="...">
+                                        <img class="rounded-circle" src="img/undraw_profile_1.svg" alt="...">
                                         <div class="status-indicator bg-success"></div>
                                     </div>
                                     <div class="font-weight-bold">
@@ -294,8 +295,7 @@
                                 </a>
                                 <a class="dropdown-item d-flex align-items-center" href="#">
                                     <div class="dropdown-list-image mr-3">
-                                        <img class="rounded-circle" src="img/undraw_profile_2.svg"
-                                            alt="...">
+                                        <img class="rounded-circle" src="img/undraw_profile_2.svg" alt="...">
                                         <div class="status-indicator"></div>
                                     </div>
                                     <div>
@@ -306,8 +306,7 @@
                                 </a>
                                 <a class="dropdown-item d-flex align-items-center" href="#">
                                     <div class="dropdown-list-image mr-3">
-                                        <img class="rounded-circle" src="img/undraw_profile_3.svg"
-                                            alt="...">
+                                        <img class="rounded-circle" src="img/undraw_profile_3.svg" alt="...">
                                         <div class="status-indicator bg-warning"></div>
                                     </div>
                                     <div>
@@ -339,8 +338,7 @@
                             <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <span class="mr-2 d-none d-lg-inline text-gray-600 small">Douglas McGee</span>
-                                <img class="img-profile rounded-circle"
-                                    src="img/undraw_profile.svg">
+                                <img class="img-profile rounded-circle" src="img/undraw_profile.svg">
                             </a>
                             <!-- Dropdown - User Information -->
                             <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
@@ -381,143 +379,253 @@
                 </div> -->
                 <!-- /.container-fluid -->
 
-<!-- ---------------------------------------------------------------------------------- -->
-<section class="form-container">
-    <div class="href-target" id="input-types"></div>
-    <h1>
-      
-     
-    <div class="nice-form-group">
-      <label>First Name</label>
-      <input type="text" placeholder="Your Last Name" value="" />
-    </div>
+                <!-- ---------------------------------------------------------------------------------- -->
+                
+                <div class="table">
+                <section class="card shadow form-container">
+                    <div class="href-target" id="input-types"></div>
+                    <h3>Personal Details</h3>
+                    <div class="row gx-3 mb-3">
 
-    <div class="nice-form-group">
-      <label>Last Name</label>
-      <input type="email" placeholder="First Name" value="" />
-    </div>
+                        <div class="nice-form-group col-md-4">
+                            <label>Last Name</label>
+                            <input type="text" placeholder="Your Last Name" value="" />
+                        </div>
 
-    <div class="nice-form-group">
-        <label>Middle Name</label>
-        <input type="text" placeholder="Middle Name (Optional)" value="" />
+                        <div class="nice-form-group col-md-4">
+                            <label>First Name</label>
+                            <input type="text" placeholder="Your First Name" value="" />
+                        </div>
+
+                        <div class="nice-form-group col-md-4">
+                            <label>Middle Name</label>
+                            <input type="text" placeholder="Your Middle Name" value="" />
+                        </div>
+
+                    </div>
+
+                    <div class="row gx-3 mb-3">
+
+                        <div class="nice-form-group col-md-4">
+                            <label>Birthday</label>
+                            <input type="tel" placeholder="Mobile Number" value="" />
+                        </div>
+
+                        <div class="nice-form-group col-md-4">
+                            <label>Mobile Number</label>
+                            <input type="tel" placeholder="Mobile Number" value="" />
+                        </div>
+
+                        <div class="nice-form-group col-md-4">
+                            <label>Email</label>
+                            <input type="tel" placeholder="Mobile Number" value="" />
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+
+                    <h3>Plan Details</h3>
+                    <div class="row gx-3 mb-3">
+
+                        <div class="nice-form-group col-md-3">
+                            <label>Plan</label>
+                            <input type="text" placeholder="Plan" value="" />
+                        </div>
+
+                        <div class="nice-form-group col-md-3">
+                            <label>Policy Status</label>
+                            <input type="text" placeholder="Policy Status" value="" />
+                        </div>
+
+                        <div class="nice-form-group col-md-3">
+                            <label>Policy Number</label>
+                            <input type="text" placeholder="Policy Number" value="" />
+                        </div>
+
+                        <div class="nice-form-group col-md-3">
+                            <label>Life Coverage</label>
+                            <input type="text" disabled placeholder="Life Coverage" value="" />
+                        </div>
+
+
+                    </div>
+                    <br>
+                    <br>
+
+
+                    <h3>Additional Benefits</h3>
+                    <br>
+
+                    <div class="benefits">
+                    <div class="row gx-3 mb-3">
+
+                        <label><input type="checkbox"> Accidental Death</label>
+                        <select style="margin-left: 183px;">
+                            <option value="">Amount</option>
+                            <option value="option1">₱1,000,000.00</option>
+                            <option value="option2">₱600,000.00</option>
+                            <!-- Add more options as needed -->
+                        </select>
+                        <!-- <input type="text"  value="" style="margin-left: 183px" ; /> -->
+                    </div>
+
+                    <div class="row gx-3 mb-3">
+
+                        <label><input type="checkbox"> Enhance Critical Illness Rider</label>
+                        <select style="margin-left: 100px;">
+                            <option value="">Amount</option>
+                            <option value="option1">₱1,000,000.00</option>
+                            <option value="option2">₱600,000.00</option>
+                        </select>
+                        <!-- <input type="text"  value="" style="margin-left: 100px;" /> -->
+                    </div>
+
+
+                    <div class="row gx-3 mb-3">
+
+                        <label><input type="checkbox"> Maccimax</label>
+                        <select style="margin-left: 239px;">
+                            <option value="">Amount</option>
+                            <option value="option1">₱1,000,000.00</option>
+                            <option value="option2">₱600,000.00</option>
+                            <!-- Add more options as needed -->
+                        </select>
+                        <!-- <input type="text"  value="" style="margin-left: 239px;" /> -->
+                    </div>
+
+
+                    <div class="row gx-3 mb-3">
+
+                        <label><input type="checkbox"> Hospital Income </label>
+                        <select style="margin-left: 195px;">
+                            <option value="">Amount</option>
+                            <option value="option1">₱1,000,000.00</option>
+                            <option value="option2">₱600,000.00</option>
+                            <!-- Add more options as needed -->
+                        </select>
+                        <!-- <input type="text"  value="" style="margin-left: 195px;" /> -->
+                    </div>
+
+
+
+                    <div class="row gx-3 mb-3">
+
+                        <label><input type="checkbox"> Total Disability Waiver of Premium </label>
+                        <select style="margin-left: 62px;">
+                            <option value="">Amount</option>
+                            <option value="option1">₱1,000,000.00</option>
+                            <option value="option2">₱600,000.00</option>
+                            <!-- Add more options as needed -->
+                        </select>
+                       
+                    </div>
+                    </div>
+
+                </div>
+
+
+
+
+                    <!-- <div class="row gx-3 mb-3">
+
+        <div class="nice-form-group col-md-5">
+          <label></label>
+          <input type="text" disabled placeholder="Enhance Critical Illness Rider" value="" />
       </div>
   
-
-    <div class="nice-form-group">
-      <label>Mobile Number</label>
-      <input type="tel" placeholder="Mobile Number" value="" />
-    </div>
-
-    <div class="nice-form-group">
-      <label>Policy status</label>
-      <input type="text" placeholder="Policy Status" value="" />
-    </div>
-
-    <div class="nice-form-group">
-      <label>Policy status</label>
-      <input type="text" placeholder="Policy Number" />
-    </div>
-
-    <div class="nice-form-group">
-      <label>Plan</label>
-      <input type="search" placeholder="Plan" value="" />
-    </div>
+      <div class="nice-form-group col-md-5">
+          <label></label>
+          <input type="text" disabled placeholder="₱1,000,000.00" value="" />
+      </div>
+  
+      </div>
 
     
-   
-  </section>
+    <div class="row gx-3 mb-3">
 
-
-
-  <section class="forms-container">
-    <div class="href-target" id="input-types"></div>
-
-    <div class="nice-form-group">
-        <label>Life Coverage</label>
-        <input type="text" disabled placeholder="Life Coverage" value="" />
+        <div class="nice-form-group col-md-5">
+          <label></label>
+          <input type="text" disabled placeholder="Maccimax" value="" />
       </div>
   
-      <div class="nice-form-group">
-          <label>Additional Benefits</label>
-          <input type="text" disabled placeholder="Additional Benefits (Optional)" value="" />
+      <div class="nice-form-group col-md-5">
+          <label></label>
+          <input type="text" disabled placeholder="₱1,000,000.00" value="" />
+      </div>
+  
       </div>
 
-      <div class="nice-form-group">
-        <label>Accidental Death</label>
-        <input type="text" disabled placeholder="Accidental Death (Optional)" value="" />
-    </div>
 
-    <div class="nice-form-group">
-        <label>Enhance Critical Illness Rider</label>
-        <input type="text" disabled placeholder="Enhance Critical Illness Rider (Optional)" value="" />
-    </div>
+      <div class="row gx-3 mb-3">
 
-    <div class="nice-form-group">
-        <label>Maccimax</label>
-        <input type="text" disabled placeholder="Maccimax (Optional)" value="" />
-    </div>
+        <div class="nice-form-group col-md-5">
+          <label></label>
+          <input type="text" disabled placeholder="Hospital Income Benefit" value="" />
+      </div>
+  
+      <div class="nice-form-group col-md-5">
+          <label></label>
+          <input type="text" disabled placeholder="₱1,000,000.00" value="" />
+      </div>
+  
+      </div>
 
-    <div class="nice-form-group">
-        <label>Hospital Income Benefit</label>
-        <input type="text" disabled placeholder="Hospital Income Benefit (Optional)" value="" />
-    </div>
+      <div class="row gx-3 mb-3">
 
-    <div class="nice-form-group">
-        <label>Total Disability Waiver of Premium </label>
-        <input type="text" disabled placeholder="Total Disability Waiver of Premium (Optional)" value="" />
-    </div>
+        <div class="nice-form-group col-md-5">
+          <label></label>
+          <input type="text" disabled placeholder="Total Disability Waiver of Premium" value="" />
+      </div>
+  
+      <div class="nice-form-group col-md-5">
+          <label></label>
+          <input type="text" disabled placeholder="₱1,000,000.00" value="" />
+      </div>
+  
+    </div> -->
 
-  </section>
 
-  <!-- ----------------------------------------------------------------------- -->
+                </section>
 
-            </div>
-            <!-- End of Main Content -->
+                <!-- ----------------------------------------------------------------------- -->
 
-            <!-- Footer -->
-           
-            <!-- End of Footer -->
 
-        </div>
-        <!-- End of Content Wrapper -->
 
-    </div>
-    <!-- End of Page Wrapper -->
+                <!-- Scroll to Top Button-->
+                <a class="scroll-to-top rounded" href="#page-top">
+                    <i class="fas fa-angle-up"></i>
+                </a>
 
-    <!-- Scroll to Top Button-->
-    <a class="scroll-to-top rounded" href="#page-top">
-        <i class="fas fa-angle-up"></i>
-    </a>
-
-    <!-- Logout Modal-->
-    <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
-                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">×</span>
-                    </button>
+                <!-- Logout Modal-->
+                <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+                                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">×</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">Select "Logout" below if you are ready to end your current session.
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+                                <a class="btn btn-primary" href="login.html">Logout</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
-                <div class="modal-footer">
-                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                    <a class="btn btn-primary" href="login.html">Logout</a>
-                </div>
-            </div>
-        </div>
-    </div>
 
-    <!-- Bootstrap core JavaScript-->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+                <!-- Bootstrap core JavaScript-->
+                <script src="vendor/jquery/jquery.min.js"></script>
+                <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-    <!-- Core plugin JavaScript-->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+                <!-- Core plugin JavaScript-->
+                <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
-    <!-- Custom scripts for all pages-->
-    <script src="js/sb-admin-2.min.js"></script>
+                <!-- Custom scripts for all pages-->
+                <script src="js/sb-admin-2.min.js"></script>
 
 </body>
 
