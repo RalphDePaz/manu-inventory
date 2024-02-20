@@ -23,6 +23,9 @@
     <!-- Custom styles for this page -->
     <link href="vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
 
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"> -->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'><link rel="stylesheet" href="css/style.css">
+
 
     <style>
 
@@ -35,8 +38,8 @@
         }
         
         .CartBtn {
-            width: 120px;
-            height: 30px;
+            width: 150px;
+            height: 50px;
             border-radius: 12px;
             border: none;
             background-color: rgb(255, 208, 0);
@@ -50,8 +53,6 @@
             position: relative;
             top: 0;
             right: 0;
-            
-            
         }
         
           
@@ -90,7 +91,7 @@
         
           
           .CartBtn:hover .IconContainer {
-            transform: translateX(58px);
+            transform: translateX(59px);
             border-radius: 40px;
             transition-duration: .5s;
           }
@@ -249,6 +250,49 @@
 
                         <div class="card-header py-3">
                             <h6 class="m-0 font-weight-bold text-primary">Client Inventory</h6>
+
+
+                            <div class="wrapper">
+                                <div class="drop-down">
+                                    <div class="drop-down-button open-close">
+                                        <span class="drop-down-title">Check your option</span>
+                                        <span class="drop-arrow"></span>
+                                    </div>
+                                    <div class="drop">
+                                        <ul class="drop-down-list" id="drop-down-list">
+                                            <li>
+                                                <input type="checkbox" class="checkbox" id="checkbox-1" checked="checked">
+                                                <label for="checkbox-1" class="checkbox-label">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</label>
+                                            </li>
+                                            <li>
+                                                <input type="checkbox" class="checkbox" id="checkbox-2">
+                                                <label for="checkbox-2" class="checkbox-label">Checkbox label</label>
+                                            </li>
+                                            <li>
+                                                <input type="checkbox" class="checkbox" id="checkbox-3">
+                                                <label for="checkbox-3" class="checkbox-label">Checkbox label</label>
+                                            </li>
+                                            <li>
+                                                <input type="checkbox" class="checkbox" id="checkbox-4">
+                                                <label for="checkbox-4" class="checkbox-label">Checkbox label</label>
+                                            </li>
+                                            <li>
+                                                <input type="checkbox" class="checkbox" id="checkbox-5">
+                                                <label for="checkbox-5" class="checkbox-label">Checkbox label</label>
+                                            </li>
+                                            <li>
+                                                <input type="checkbox" class="checkbox" id="checkbox-6">
+                                                <label for="checkbox-6" class="checkbox-label">Checkbox label</label>
+                                            </li>
+                                            <li>
+                                                <input type="checkbox" class="checkbox" id="checkbox-7">
+                                                <label for="checkbox-7" class="checkbox-label">Checkbox label</label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
 
                             <div class="CartContainer">
                                 <a href="addclient.html" style="text-decoration: none;">
@@ -820,6 +864,10 @@
 
     <!-- Page level custom scripts -->
     <script src="js/demo/datatables-demo.js"></script>
+
+    <!-- partial -->
+    <!-- <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script> -->
+    <script  src="js/script.js"></script>
 
 </body>
 
